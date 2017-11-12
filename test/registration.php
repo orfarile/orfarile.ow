@@ -2,7 +2,13 @@
 	$link = mysqli_connect ("test", "root", "", "test")
 		or die ("Ошибка");
 
-	if($_POST['login'] != NULL) {
+    if($_POST['password'] != $_POST['repeat-password']) {
+        
+		echo 'Пароли должны совпадать!';
+        
+	}
+
+	else {
         
 //		echo htmlspecialchars($_POST['login']);
         
@@ -31,9 +37,4 @@
         
 	}
 
-	elseif($_POST['login'] == NULL) {
-        
-		echo 'Вы не ввели логин';
-        
-	}
 ?>

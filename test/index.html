@@ -6,11 +6,26 @@
 	<title>test</title>
 </head>
 <body>
+	<div class="background">
+		<div class="form">
+			<button class="form__close-btn" onClick='showForm()'>
+				X
+			</button>
+			<form action="registration.php" method="POST" class="registration-form form">
+				<h2 class='form__heading'>Регистрация</h2>
+				<p>Придумайте логин:</p>
+				<input type="text" maxlength="20" name='login' required>
+				<p>Придумайте пароль:</p>
+				<input type="password" maxlength="20" name='password' required>
+				<button type='submit' class='form__accept-btn'>Подтвердить</button>
+			</form>
+		</div>
+	</div>
 	<header class="header">
 			<div class="header__logo">orfarile</div>
 			<div class="header__buttons">
-				<a href="#" class="header__btn">Вход</a>
-				<a href="#" class="header__btn">Регистрация</a>
+				<a href='#' class="header__btn">Вход</a>
+				<a href='#' class="header__btn" onClick='showForm()'>Регистрация</a>
 			</div>
 	</header>
 	<section class="content">
@@ -30,5 +45,6 @@
 		<a href="#" class="footer__item">Нашли баг?</a>
 		<a href="#" class="footer__item">Отзывы</a>
 	</footer>
+	<script src='script.js'></script>
 </body>
 </html>

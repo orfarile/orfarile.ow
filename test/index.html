@@ -11,15 +11,16 @@
 			<button class="form__close-btn" onClick='showForm()'>
 				X
 			</button>
-			<form action="registration.php" method="POST" class="registration-form form">
+			<form action='POST' action = 'registration.php' class="registration-form form">
 				<h2 class='form__heading'>Регистрация</h2>
 				<p>Придумайте логин:</p>
 				<input type="text" maxlength="20" name='login' required>
 				<p>Придумайте пароль:</p>
-				<input type="password" maxlength="20" name='password' required>
+				<input class='password' type="password" maxlength="20" name='password' required>
 				<p>Повторите пароль:</p>
-				<input type="password" maxlength="20" name='repeat-password' required>
-				<button type='submit' class='form__accept-btn'>Подтвердить</button>
+				<input class='password' type="password" maxlength="20" name='repeat-password' required>
+				<p class='error'> </p>
+				<button type='button' onclick='validate()' class='form__accept-btn'>Подтвердить</button>
 			</form>
 		</div>
 	</div>

@@ -1,18 +1,6 @@
 <?php
 	$link = mysqli_connect ("test", "root", "", "test")
 		or die ("Ошибка");
-
-    if($_POST['password'] != $_POST['repeat-password']) {
-        
-		echo 'Пароли должны совпадать!';
-        
-	}
-
-	else {
-        
-//		echo htmlspecialchars($_POST['login']);
-        
-//        $login = $_POST['login'];
         
         $result = mysqli_query($link, "SELECT login FROM users WHERE login = '".$_POST['login']."'")
             or die ('Не удалось подключиться к базе');
@@ -34,7 +22,5 @@
             echo 'login занят';
                 
         }
-        
-	}
 
 ?>

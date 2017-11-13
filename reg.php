@@ -1,5 +1,5 @@
 <?php
-	$link = mysqli_connect ("test", "root", "", "test")
+	$link = mysqli_connect ("orfarile.ow", "admin", "admin", "test")
 		or die ("Ошибка");
         
         $result = mysqli_query($link, "SELECT login FROM users WHERE login = '".$_POST['login']."'")

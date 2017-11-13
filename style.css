@@ -158,7 +158,7 @@ ____/\\\__/\\\______/\\\\\\\\\______/\\\\\\\\\\\\\\\_____/\\\\\\\\\\\\__________
 	background: rgba(0,0,0,0.5);
 }
 
-.registration-form { 
+#registration-form { 
     color: gray;
 	background-color: white;
 	display: none;

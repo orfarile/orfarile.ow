@@ -14,7 +14,7 @@
             
 		mysqli_close($link);
             
-        header( 'Location: test/private-office.htm', true, 303 );
+        header( 'Location: test/private-office.htm', true, 303);
             
         }
         else {

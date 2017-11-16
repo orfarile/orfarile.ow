@@ -10,7 +10,7 @@
         $password = mysqli_query($link, "SELECT password FROM users WHERE login = '".$_POST['password']."'")
          or die ('Подключение не удалось');
 
-        $password = mysqli_query($password);
+        $password = mysqli_num_rows($password);
 
         if(isset($login) && isset($password)){
             header( 'Location: closed/office.html', true, 303);     

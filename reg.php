@@ -7,7 +7,7 @@
         
         $result = mysqli_num_rows($result);
         
-        if($result == null){
+        if(!isset($result)){
             
 		$sql = mysqli_query($link, "INSERT INTO users (login, password)
                                     VALUES ('".htmlspecialchars($_POST['login'])."', '".htmlspecialchars($_POST['password'])."')");	

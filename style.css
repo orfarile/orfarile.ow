@@ -158,7 +158,7 @@ ____/\\\__/\\\______/\\\\\\\\\______/\\\\\\\\\\\\\\\_____/\\\\\\\\\\\\__________
 	background: rgba(0,0,0,0.5);
 }
 
-#registration-form { 
+form { 
     color: gray;
 	background-color: white;
 	display: none;
@@ -167,6 +167,11 @@ ____/\\\__/\\\______/\\\\\\\\\______/\\\\\\\\\\\\\\\_____/\\\\\\\\\\\\__________
 	justify-content: space-between;
     border-radius: 3px;
     padding: 0 20px;
+    width: 265px;
+}
+
+#registration-form {
+    
 }
 
 .form__heading {

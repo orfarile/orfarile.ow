@@ -1,7 +1,10 @@
 <!DOCTYPE html>
+<?php
+include ()
+?>
 <html lang="en">
 <head>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../css/choose.css">
 	<meta charset="UTF-8">
 	<title>Document</title>
 </head>
@@ -30,7 +33,5 @@
 			<a href="#" class="footer__item">Отзывы</a>
 		</footer>
 	</div>
-	<script src='script.js'>
-	</script>
 </body>
 </html>

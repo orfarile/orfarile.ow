@@ -1,4 +1,6 @@
 <?php
+    session_start();
+    
 	$link = mysqli_connect ("orfarile.ow", "admin", "admin", "test")
 		or die ("Ошибка подключения");
         
@@ -13,7 +15,8 @@
         $password = mysqli_num_rows($password);
 
         if(isset($login) && isset($password)){
-            header( 'Location: closed/office.html', true, 303);     
+            $_SESSION['auth'] = 1;
+            header( 'Location: /closed/choose.html', true, 303);     
         }
         else {
             

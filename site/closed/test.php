@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+include '../php/check.php';
+?>
 <html lang="en">
 <head>
 	<link rel="stylesheet" href="../css/test.css">

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 	<link rel="stylesheet" href="css/style.css">
 	<meta charset="UTF-8">
 	<title>test</title>
+	<script src='js/modul.js'></script>
 </head>
 <body>
 	<div class="background">
@@ -58,6 +58,5 @@
 		<a href="#" class="footer__item">Нашли баг?</a>
 		<a href="#" class="footer__item">Отзывы</a>
 	</footer>
-	<script src='script.js'></script>
 </body>
 </html>

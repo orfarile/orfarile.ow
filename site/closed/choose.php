@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-include ()
+include '../php/check.php';
 ?>
 <html lang="en">
 <head>

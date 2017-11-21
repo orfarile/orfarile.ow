@@ -16,12 +16,13 @@
 
         if(isset($login) && isset($password)){
             $_SESSION['auth'] = 1;
+            $_SESSION['login'] = $_POST['login'];
+            $_SESSION['time'] = time();
+            $_SESSION['counter'] = 1;
             header( 'Location: /closed/choose.html', true, 303);     
         }
         else {
-            
-            echo 'Ошибка введенные данных';
-                
+            echo 'Ошибка введенные данных';        
         }
 	mysqli_close($link);
 ?>

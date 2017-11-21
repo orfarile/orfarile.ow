@@ -2,10 +2,12 @@ DROP DATABASE test;
 
 CREATE DATABASE IF NOT EXISTS test;
 
-CREATE TABLE IF NOT EXISTS users (
-	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	login VARCHAR(20),
-	password VARCHAR(20),
-	verify TINYINT(1),
-	auth TINYINT(1)
-	);
+use test;
+
+create table if not exists users(
+    id int(10) not null auto_increment primary key,
+    login varchar(16),
+    password varchar(32),
+    verify tinyint(1),
+    time_enter datetime
+    );

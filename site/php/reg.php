@@ -15,7 +15,8 @@
             header( 'Location: ../demo/test.html', true, 303);            
         }
         else {
-            echo 'login занят';  
+            header( 'Location: index.php', true, 303);    
+            echo '<p>login занят</p>';  
         }
-
+    include 'login.php';
 ?>

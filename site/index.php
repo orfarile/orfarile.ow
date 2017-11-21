@@ -4,7 +4,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<meta charset="UTF-8">
 	<title>test</title>
-	<script src='js/modul.js'></script>
+	<script src='js/forIndex.js'></script>
 </head>
 <body>
 	<div class="background">

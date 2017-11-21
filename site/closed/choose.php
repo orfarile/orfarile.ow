@@ -1,7 +1,8 @@
-<!DOCTYPE html>
 <?php
-include '../php/check.php';
+	session_start();
+	include_once('../php/check.php');
 ?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<link rel="stylesheet" href="../css/choose.css">

@@ -1,13 +1,14 @@
-<!DOCTYPE html>
 <?php
-include '../php/check.php';
+	session_start();
+	include_once('../php/check.php');
 ?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<link rel="stylesheet" href="../css/test.css">
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<script src="../js/script.js"></script>
+	<script src="../js/test.js"></script>
 </head>
 <body>
 	<header class="header">

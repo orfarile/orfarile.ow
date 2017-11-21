@@ -1,15 +1,27 @@
 var show = false; 
 
-function showForm() {
+function showRegForm() {
 	if(show == false) {
 		document.getElementsByClassName('background')[0].style.display = 'flex';
 		document.getElementById('registration-form').style.display = 'flex';
 		show = true;
-	} else {
-		document.getElementsByClassName('background')[0].style.display = 'none';
-        document.getElementsByClassName('error')[0].innerHTML = '';
-		show = false;
 	}
+}
+
+function showLoginForm() {
+	if(show == false) {
+		document.getElementsByClassName('background')[0].style.display = 'flex';
+		document.getElementById('login-form').style.display = 'flex';
+		show = true;
+	}
+}
+
+function closeForm() {
+        document.getElementsByClassName('background')[0].style.display = 'none';
+        document.getElementsByClassName('error')[0].innerHTML = '';
+        document.getElementById('login-form').style.display = 'none';
+        document.getElementById('registration-form').style.display = 'none';
+		show = false;
 }
 
 function validate() {

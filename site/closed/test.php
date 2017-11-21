@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	include_once('../php/check.php');
+	include('../php/check.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,5 +21,14 @@
 		<form class="test">
 		</form>
 	</div>
+	<footer class="footer">
+		<a href="#" class="footer__item">Контакты</a>
+		<a href="#" class="footer__item">О нас</a>
+		<a href="#" class="footer__item">Нашли баг?</a>
+		<a href="#" class="footer__item">Отзывы</a>
+		<form action='../php/logout.php'>
+            <button type='submit'>LOGOUT</button>
+        </form>
+	</footer>
 </body>
 </html>

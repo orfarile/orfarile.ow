@@ -7,9 +7,11 @@
         
         $result = mysqli_num_rows($result);
         
+        $passwordhash = md5($_POST['password']);
+
         if(isset($result)){            
             $sql = mysqli_query($link, "INSERT INTO users (login, password)
-                                        VALUES ('".htmlspecialchars($_POST['login'])."', '".htmlspecialchars($_POST['password'])."')");	
+                                        VALUES ('".htmlspecialchars($_POST['login'])."', '".htmlspecialchars($passwordhash)."')");	
             mysqli_close($link);
                 
             header( 'Location: ../demo/test.html', true, 303);            

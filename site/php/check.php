@@ -21,21 +21,9 @@
 		  $sql = mysqli_query($link, "INSERT INTO logs (login, time, auth, counter) VALUES ('".$_SESSION['login']."','".$_SESSION['time']."', '".$_SESSION['auth']."', '".$_SESSION['counter']."')");	
 		  mysqli_close($link);
 
-		echo ("<p>Попробуйте выполнить вход заново</p>");
-		echo("<script type='text/javascript'>
-		
-		  location='http://yandex.ru';
-		
-		  document.location.href='http://yandex.ru';
-		
-		  location.replace('http://yandex.ru');
-		
-		  window.location.reload('http://yandex.ru');
-		
-		  document.location.replace('http://yandex.ru');
-		  
-		  setTimeout( 'location='http://yandex.ru';', 5000 );
-		</script>");
+		echo ("<p>Недостачно прав для просмотра\n</p>");
+		echo ("<p>Попробуйте выполнить вход заново\n</p>");
+		echo ("<p>Для перехода на главную страницу нажмите сюда -><a href='http://orfarile.ow/site/'>Главная</a></p>");
 		exit;
 	}
 ?>

@@ -8,8 +8,10 @@
          or die ('Не удалось подключиться к базе');
         
         $login = mysqli_num_rows($login);
+
+        $passwordhash = md5($_POST['password']);
         
-        $password = mysqli_query($link, "SELECT password FROM users WHERE login = '".$_POST['password']."'")
+        $password = mysqli_query($link, "SELECT password FROM users WHERE password = '".$passwordhash."'")
          or die ('Подключение не удалось');
 
         $password = mysqli_num_rows($password);

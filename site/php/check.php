@@ -22,7 +22,20 @@
 		  mysqli_close($link);
 
 		echo ("<p>Попробуйте выполнить вход заново</p>");
-		header( 'Location: http://orfarile.ow/site/index.php', true, 302);
+		echo("<script type='text/javascript'>
+		
+		  location='http://yandex.ru';
+		
+		  document.location.href='http://yandex.ru';
+		
+		  location.replace('http://yandex.ru');
+		
+		  window.location.reload('http://yandex.ru');
+		
+		  document.location.replace('http://yandex.ru');
+		  
+		  setTimeout( 'location='http://yandex.ru';', 5000 );
+		</script>");
 		exit;
 	}
 ?>

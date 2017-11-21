@@ -1,7 +1,8 @@
-<!DOCTYPE html>
 <?php
-include '../php/check.php';
+	session_start();
+	include('../php/check.php');
 ?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<link rel="stylesheet" href="../css/choose.css">
@@ -31,6 +32,9 @@ include '../php/check.php';
 			<a href="#" class="footer__item">Контакты</a>
 			<a href="#" class="footer__item">Нашли баг?</a>
 			<a href="#" class="footer__item">Отзывы</a>
+			<form action='../php/logout.php'>
+            <button type='submit'>LOGOUT</button>
+       		</form>
 		</footer>
 	</div>
 </body>

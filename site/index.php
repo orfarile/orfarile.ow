@@ -1,10 +1,14 @@
+<?php
+	session_start();
+	print_r($_SESSION);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<link rel="stylesheet" href="css/style.css">
 	<meta charset="UTF-8">
 	<title>test</title>
-	<script src='js/modul.js'></script>
+	<script src='js/forIndex.js'></script>
 </head>
 <body>
 	<div class="background">
@@ -50,13 +54,14 @@
 			<div class="slider__circle"></div>
 			<div class="slider__circle"></div>
 		</div>
-		<a href="/opened/demo/test.html" class="content__demo-test-btn">Демо-тест</a>
+		<a href="#" class="content__demo-test-btn">Демо-тест</a>
 	</section>
 	<footer class="footer">
 		<a href="#" class="footer__item">Контакты</a>
 		<a href="#" class="footer__item">О нас</a>
 		<a href="#" class="footer__item">Нашли баг?</a>
 		<a href="#" class="footer__item">Отзывы</a>
+		<a href='php/logout.php'>LOGOUT</a>
 	</footer>
 </body>
 </html>
